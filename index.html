@@ -17,11 +17,7 @@
     * {
       margin: 0;
       box-sizing: content-box;
-      font-family: Verdana, Geneva, sans-serif;
-    }
-
-    body {
-      padding-top: 2em;
+      font-family: sans-serif;
     }
 
     body,
@@ -33,7 +29,8 @@
     h1,
     h2 {
       color: var(--blue-dark-primary);
-      margin: 1em 0;
+      margin: 0;
+      margin-bottom: 1em;
     }
 
     h3 {
@@ -46,6 +43,11 @@
       display: inline-block;
       color: var(--blue-dark-secondary);
       background-color: var(--blue-light-primary);
+    }
+
+    b {
+      background-color: var(--blue-light-primary);
+      color: var(--blue-dark-secondary);
     }
 
     li {
@@ -63,14 +65,12 @@
       justify-content: space-between;
     }
 
-    #information p {
-      font-size: 8pt;
-    }
 
     a {
       color: var(--blue-dark-primary);
       padding: 0 4px;
-      font-size: 8pt;
+      font-size: 10pt;
+      text-decoration: none;
     }
 
     a:visited {
@@ -79,6 +79,15 @@
 
     .experience {
       margin: 1em 0;
+    }
+
+    .emoji-with-header {
+      display: flex;
+      gap: 8px;
+    }
+
+    .emoji {
+      font-size: 10pt;
     }
 
     .links {
@@ -90,7 +99,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 8pt;
+      font-size: 10pt;
       padding: 0 8px;
       margin-bottom: -4px;
     }
@@ -110,8 +119,8 @@
 
       <section class="links">
         <p class="link">email:<a href="mailto:chouandrewo@gmail.com">chouandrewo@gmail.com</a></p>
-        <p class="link">site:<a href="https://andrewchou.hashbase.io" target="_blank"
-            rel="noopener noreferrer">andrewchou.hashbase.io</a>
+        <p class="link">site:<a href="https://andrew.nonetoohappy.buzz" target="_blank"
+            rel="noopener noreferrer">andrew.nonetoohappy.buzz</a>
         </p>
       </section>
     </h1>
@@ -119,7 +128,7 @@
       Open: web 🌐, source 💻, and mind 💭.</p>
     <br />
     <p class="mission"> Proud advocate of <u><em>considerate</em></u> technology
-      backed by a desire to provide social impact.
+      that aims to provide social impact.
     </p>
   </section>
 
@@ -129,7 +138,39 @@
     <h1>Experience</h1>
 
     <section class="experience">
-      <h3>◑ Inverse</h3>
+      <div class="emoji-with-header">
+        <span class="emoji">🐣</span>
+        <h3>
+          Hatch
+        </h3>
+      </div>
+      <h4>Software Engineer / Remote / October 2020 - Current</h4>
+      <p>
+        Crafting interfaces for financial tools and services that help small businesses grow and thrive.
+      </p>
+      <ul>
+        <li>
+          Building out our flagship product – Business Checking Accounts – and maintaining other services like Line of
+          Credit
+        </li>
+        <li>
+          Continuously improving and working on our internal CRM and applicant processing tool – Halo.
+        </li>
+        <li>
+          Closely collaborating with our design and product team to build the foundations for a company-wide design
+          system to achieve visual consistency across current and future products and services.
+        </li>
+      </ul>
+    </section>
+
+    <!-- 
+    <section class="experience">
+      <div class="emoji-with-header">
+        <span class="emoji">◑</span>
+        <h3>
+          Inverse
+        </h3>
+      </div>
       <h4>Frontend Developer / Remote / March 2020 - June 2020</h4>
       <p>
         Led user interface development of a knowledge sharing tool that lives in your web browser.
@@ -142,10 +183,15 @@
           Closely collaborated with co-founder/lead designer on app design and user stories using Figma.
         </li>
       </ul>
-    </section>
+    </section> -->
 
     <section class="experience">
-      <h3>💌 Consider</h3>
+      <div class="emoji-with-header">
+        <span class="emoji">💌</span>
+        <h3>
+          Consider
+        </h3>
+      </div>
       <h4>Software Engineer / Boston, MA / February 2019 - March 2020</h4>
       <p>
         Humanized work – starting with email for companies. Built new
@@ -163,7 +209,12 @@
     </section>
 
     <section class="experience">
-      <h3>🏠 Wayfair</h3>
+      <div class="emoji-with-header">
+        <span class="emoji">🏠</span>
+        <h3>
+          Wayfair
+        </h3>
+      </div>
       <h4>Software Engineer / Boston, MA / October 2018 - February 2019</h4>
       <p>
         Participated in Wayfair Labs – the company's two-month onboarding
@@ -173,9 +224,13 @@
     </section>
 
     <section class="experience">
-      <h3>🇺🇸 Coding it Forward</h3>
+      <div class="emoji-with-header">
+        <span class="emoji">🇺🇸</span>
+        <h3>
+          Coding it Forward
+        </h3>
+      </div>
       <h4>Civic Digital Fellow / Washington, D.C. / June 2018 - August 2018</h4>
-
       <p>
         Selected as one of thirty-six fellows for the Coding it Forward
         program, doing software development for the Center for Disclosure
@@ -190,9 +245,13 @@
       </ul>
     </section>
 
-    <!--
-    <section class="experience">
-      <h3>🗺 Humanitarian OpenStreetMap Team</h3>
+    <!-- <section class="experience">
+      <div class="emoji-with-header">
+        <span class="emoji">🗺</span>
+        <h3>
+          Humanitarian OpenStreetMap Team
+        </h3>
+      </div>
       <h4>Mapping Intern / Remote / July 2017 - August 2017</h4>
       <p>
         Contributed to the Malaria Elimination campaign, a Missing Maps project which aimed to provide geospatial data
@@ -204,16 +263,24 @@
           using OpenStreetMap software (JOSM).
         </li>
       </ul>
-    </section>
-    -->
+    </section> -->
 
     <section class="experience">
-      <h3>🛠 Skills</h3>
-      <h4>
-        HTML/CSS/JavaScript (React), React
-        Native, Electron, GraphQL, Ruby (on Rails), Python
-      </h4>
-
+      <div class="emoji-with-header">
+        <span class="emoji">🛠</span>
+        <h3>
+          Skills
+        </h3>
+      </div>
+      <ul>
+        <li>
+          Technical: <b>HTML/CSS/JavaScript, UI Frameworks (e.g. React), React Native, Electron, GraphQL
+          </b>
+        </li>
+        <li>
+          Practical: <b>Hunting Down GitHub Issues, Open Source Ecosystem Awareness, Reading Documentation</b>
+        </li>
+      </ul>
     </section>
   </section>
 
@@ -222,7 +289,12 @@
   <section>
     <h1>Education</h1>
     <section class="experience">
-      <h3>🤠 The University of Texas at Austin</h3>
+      <div class="emoji-with-header">
+        <span class="emoji">🤠</span>
+        <h3>
+          The University of Texas at Austin
+        </h3>
+      </div>
       <h4>Bachelor of Science in Mathematics / Austin, TX / 2015 - 2018</h4>
       <p>
         With extensive coursework in computer science and geographic information systems.
